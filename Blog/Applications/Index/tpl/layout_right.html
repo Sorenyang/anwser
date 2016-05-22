@@ -1,0 +1,75 @@
+<aside>
+    <div class="avatar"><a href="{:U(GROUP_NAME.'/About/index')}"><span>关于我</span></a></div>
+    <div class="topspaceinfo">
+      <h1>宁可一思进，莫在一思停。</h1>
+      <p>世界很大，学会做一名旅者，安静观察、静心旅行。</p>
+    </div>
+   <div class="about_c">
+      <p> 网名：sai_young | 不二 | 拔刀央</p>
+      <p> 职业：程序猿 </p>
+      <p> 籍贯：四川—绵阳 </p>
+      <p> 电话：13693415396</p>
+      <p> 邮箱：yingsantai@sina.com</p>
+    </div>
+    
+    
+
+
+
+    <div class="tj_news">
+      <h2>
+        <p class="tj_t2">点击排行</p>
+      </h2>
+      <ul class="ph_n">
+      <foreach name='hots' item='v'>
+        <li><span class="num1">{$key+1}</span><a href="{:U('Index/List/show',array('id'=>$v['id']))}">{$v.title}</a></li>
+      </foreach>  
+      </ul>
+     
+
+
+      <h2>
+        <p class="tj_t1">最新发布</p>
+      </h2>
+      <ul>
+      <foreach name='new' item='b'>
+        <li><a href="{:U('Index/List/show',array('id'=>$v['id']))}">{$b.title}</a></li>
+      </foreach>  
+      </ul>
+
+
+    </div>
+
+     <div class="links">
+      <h2>
+        <p>友情链接</p>
+      </h2>
+      <ul>
+        <li><a href="http://www.thinkphp.cn/">ThinkPHP</a></li>
+        <li><a href="">百度</a></li>
+      </ul>
+    </div>
+     <div class="copyright">
+      <ul>
+        <p> Design by <a href="www.yangqq.com">DanceSmile</a></p>
+        <p>蜀ICP备11002373号-1</p>
+        </p>
+      </ul>
+    </div>
+
+
+   
+  </aside>
+  <script src="js/silder.js"></script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>
+</body>
+</html>
+
+
+
+
+ 
+
+

@@ -1,0 +1,20 @@
+
+<link href="__PUBLIC__/css/style.css" rel="stylesheet">
+<title>慢生活</title>
+</head>
+<body>
+
+  <article>
+    <h2 class="about_h">您现在的位置是：<a href="/">首页</a>><a href="1/">慢生活</a></h2>
+    <div class="template">
+     
+      <ul>
+        <foreach name='img' item='v'>
+        <li><a href="{:U(GROUP_NAME.'/Image/img',array('id'=>$v['id']))}"  target="_blank"><img src="__PUBLIC__/images/{$v.images}"></a><span>{$v.alt}</span></li>
+        </foreach>
+      </ul>
+     
+    </div>
+    <div class="page"><a title="Total record"><b>113</b></a><b>1</b><a href="/">2</a><a href="/">3</a><a href="/">4</a><a href="/">5</a><a href="/">&gt;</a><a href="/">&gt;&gt;</a></div>
+  </article>
+ <include file="Layout:right"/>

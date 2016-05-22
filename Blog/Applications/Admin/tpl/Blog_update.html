@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="__PUBLIC__/Css/public.css" />
+	<script type="text/javascript">
+		window.UEDITOR_HOME_URL = "__ROOT__/Data/Ueditor/";
+		window.onload = function(){
+			window.UEDITOR_CONFIG.initialFrameHeight = 400;  //编辑器高度
+			window.UEDITOR_CONFIG.initialFrameWidth = 1100;   //编辑器宽度
+			window.UEDITOR_CONFIG.savePath = ['Upload'];  
+			window.UEDITOR_CONFIG.imageUrl = "{:U(GROUP_NAME.'/Blog/upload')}"; 
+			window.UEDITOR_CONFIG.imagePath = '__ROOT__/Upload/';
+			UE.getEditor('content');
+		}
+	</script>
+	<js file="__ROOT__/Data/Ueditor/ueditor.config.js" />
+	<js file="__ROOT__/Data/Ueditor/ueditor.all.min.js" />
+	
+
+	<title>博文修改</title>
+</head>
+<body>
+	<form action="{:U(GROUP_NAME.'/Blog/updateHandel')}" method="post">
+		<table class="table">
+			<tr>
+				<th colspan="2">博文修改</th>
+			</tr>
+			<tr>
+				<td align="right" width="10%">所属分类：</td>
+				<td>
+					<select name="cid">
+						<option value="">==请选择==</option>
+						
+						<foreach name='cate' item='v'>
+						
+							<option value="{$v['id']}"   <if condition=" $v['id'] eq $blog['cid']">  selected="selected" </if>>{$v.html}{$v.name}</option>
+						
+                		</foreach>
+					
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">博文属性：</td>
+				<td>
+					<foreach name='attr' item='v'>					
+						<lable style='margin-right:10px;'>						
+							<input type="checkbox" name="aid[]" value="{$v.id}" <if condition="in_array($v['id'],$ids)"> checked="checked" </if> />&nbsp;{$v.name}
+						</lable>
+									
+					</foreach>
+				</td>
+			</tr>
+				<tr>
+					<td align="right">点击次数</td>
+					<td>
+					<input type="text" name="click" value="{$blog['click']}" />
+				</td>	
+				</tr>
+			<tr>
+				<td align="right">标题：</td>
+				<td>
+					<input type="text" name="title" value="{$blog['title']}"  />
+				</td>	
+			</tr>
+			<tr>
+				<td align="right">摘要：</td>
+				<td>
+					<input type="text" name="summary" value="{$blog['summary']}"  />
+				</td>	
+			</tr>	
+
+			<tr>
+				<td colspan="2">
+					<textarea name="content" id="content">
+						{$blog['content']}
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+					
+					
+					<input type="hidden" name="id" value="{$blog.id}" />
+					<input type="submit" value="保存发布" />
+				</td>
+			</tr>
+		</table>
+
+
+	</form>
+</body>
+</html>

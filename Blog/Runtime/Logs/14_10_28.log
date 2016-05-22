@@ -1,0 +1,443 @@
+[ 2014-10-28T23:33:54+08:00 ] 127.0.0.1 /1/index.php/Admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005548s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005786s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004413s ]
+
+[ 2014-10-28T23:33:55+08:00 ] 127.0.0.1 /1/index.php/Admin/Login/Index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004658s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004871s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004247s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.083953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084206s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003937s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003694s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003428s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015342s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004557s ]
+
+[ 2014-10-28T23:33:55+08:00 ] 127.0.0.1 /1/index.php/Admin/Login/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004522s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004734s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003812s ]
+NOTIC: [8] ob_end_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete. F:\www\1\Blog\Applications\Admin\action\LoginAction.class.php 第 18 行.
+
+[ 2014-10-28T23:34:01+08:00 ] 127.0.0.1 /1/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005925s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.009083s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.046158s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002760s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424041 ) ORDER BY time desc  [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.010314s ]
+SQL: SELECT * FROM `pp_blog` LIMIT 4   [ RunTime:0.004430s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.160239s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='79' [ RunTime:0.072032s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.008774s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.003442s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='80' [ RunTime:0.000823s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.000733s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='81' [ RunTime:0.000986s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000662s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='82' [ RunTime:0.000806s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107501s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003150s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002549s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011252s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003219s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003413s ]
+
+[ 2014-10-28T23:34:08+08:00 ] 127.0.0.1 /1/index.php/Index/About/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003939s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004190s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003576s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.012238s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.004710s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.013450s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.005925s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424048 ) ORDER BY time desc  [ RunTime:0.001419s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.110837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111177s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003598s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002846s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002375s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012285s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004532s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004738s ]
+
+[ 2014-10-28T23:34:08+08:00 ] 127.0.0.1 /1/index.php/Index/About/js/silder.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006037s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006472s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004099s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.012171s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.006085s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.012800s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.001913s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424048 ) ORDER BY time desc  [ RunTime:0.001341s ]
+ERR: 非法操作:js
+
+[ 2014-10-28T23:36:57+08:00 ] 127.0.0.1 /1/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003054s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.039266s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.004630s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.012387s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.001944s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424217 ) ORDER BY time desc  [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.013437s ]
+SQL: SELECT * FROM `pp_blog` LIMIT 4   [ RunTime:0.001594s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.010361s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='79' [ RunTime:0.006118s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.007927s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.005841s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='80' [ RunTime:0.000799s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.000601s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='81' [ RunTime:0.000686s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000613s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='82' [ RunTime:0.000841s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051938s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003757s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003286s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002429s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012358s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002728s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002916s ]
+
+[ 2014-10-28T23:37:45+08:00 ] 127.0.0.1 /1/index.php/Index/List/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005647s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003959s ]
+NOTIC: [2048] Declaration of ListAction::show() should be compatible with that of Action::show() F:\www\1\Blog\Applications\Index\action\ListAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.007524s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.004045s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.010981s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002394s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424264 ) ORDER BY time desc  [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.009348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pp_blog` LIMIT 1   [ RunTime:0.000600s ]
+SQL: SELECT * FROM `pp_blog` ORDER BY time desc LIMIT 0,6   [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.008512s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='86' [ RunTime:0.003630s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.007820s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.004555s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='85' [ RunTime:0.000620s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000470s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='84' [ RunTime:0.000550s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.000788s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='83' [ RunTime:0.000759s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000401s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='82' [ RunTime:0.000595s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000959s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='81' [ RunTime:0.000534s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.053181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053344s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000916s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000592s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000376s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002826s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000934s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2014-10-28T23:37:45+08:00 ] 127.0.0.1 /1/index.php/Index/List/js/silder.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001791s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002394s ]
+NOTIC: [2048] Declaration of ListAction::show() should be compatible with that of Action::show() F:\www\1\Blog\Applications\Index\action\ListAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.017646s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.004565s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002965s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424265 ) ORDER BY time desc  [ RunTime:0.000850s ]
+ERR: 非法操作:js
+
+[ 2014-10-28T23:37:47+08:00 ] 127.0.0.1 /1/index.php/Index/Image/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001867s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.006454s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.003571s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.006472s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.005374s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424267 ) ORDER BY time desc  [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `pp_image` [ RunTime:0.038535s ]
+SQL: SELECT * FROM `pp_image`  [ RunTime:0.002843s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057135s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001034s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000719s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003551s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002538s ]
+
+[ 2014-10-28T23:37:47+08:00 ] 127.0.0.1 /1/index.php/Index/Image/js/silder.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001628s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001806s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.006950s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.003152s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.005926s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002977s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424267 ) ORDER BY time desc  [ RunTime:0.000943s ]
+ERR: 非法操作:js
+
+[ 2014-10-28T23:37:56+08:00 ] 127.0.0.1 /1/index.php/Index/Image/img/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.008960s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.002845s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.008074s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.004635s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424276 ) ORDER BY time desc  [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `pp_image` [ RunTime:0.004484s ]
+SQL: SELECT * FROM `pp_image` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.003600s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037951s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001859s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000899s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005914s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\1\Blog\Common\common.php:11) F:\www\1\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\1\Blog\Common\common.php:11) F:\www\1\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\1\Blog\Common\common.php:11) F:\www\1\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2014-10-28T23:37:56+08:00 ] 127.0.0.1 /1/index.php/Index/Image/img/id/js/silder.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.005026s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.002631s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.006184s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002797s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424276 ) ORDER BY time desc  [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `pp_image` [ RunTime:0.005364s ]
+SQL: SELECT * FROM `pp_image` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.001488s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018951s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000489s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000487s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002129s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\1\Blog\Common\common.php:11) F:\www\1\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\1\Blog\Common\common.php:11) F:\www\1\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\1\Blog\Common\common.php:11) F:\www\1\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000810s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2014-10-28T23:38:12+08:00 ] 127.0.0.1 /1/index.php/Index/List/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002485s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [2048] Declaration of ListAction::show() should be compatible with that of Action::show() F:\www\1\Blog\Applications\Index\action\ListAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.006766s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.005402s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.007514s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.003705s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424292 ) ORDER BY time desc  [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.007353s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pp_blog` LIMIT 1   [ RunTime:0.004079s ]
+SQL: SELECT * FROM `pp_blog` ORDER BY time desc LIMIT 0,6   [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.012499s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='86' [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.013782s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000693s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='85' [ RunTime:0.000548s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000382s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='84' [ RunTime:0.000668s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='83' [ RunTime:0.000848s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.001469s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='82' [ RunTime:0.000479s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000476s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='81' [ RunTime:0.000921s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030602s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000874s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001561s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000829s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004544s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001199s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2014-10-28T23:38:13+08:00 ] 127.0.0.1 /1/index.php/Index/List/js/silder.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002791s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+NOTIC: [2048] Declaration of ListAction::show() should be compatible with that of Action::show() F:\www\1\Blog\Applications\Index\action\ListAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.006062s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.002350s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.006219s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002635s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424293 ) ORDER BY time desc  [ RunTime:0.000542s ]
+ERR: 非法操作:js
+
+[ 2014-10-28T23:44:39+08:00 ] 127.0.0.1 /1/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.022777s ]
+SQL: SELECT * FROM `pp_cate`  [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.007356s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY click desc  [ RunTime:0.002016s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1414424679 ) ORDER BY time desc  [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.009533s ]
+SQL: SELECT * FROM `pp_blog` LIMIT 4   [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.004509s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='79' [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.013200s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.000951s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='80' [ RunTime:0.000668s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='7' ) LIMIT 1   [ RunTime:0.000470s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='81' [ RunTime:0.004181s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000865s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\1\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='82' [ RunTime:0.000988s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035887s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001109s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001171s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000928s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004624s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001352s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001435s ]
+

@@ -1,0 +1,30 @@
+
+<link href="__PUBLIC__/css/style.css" rel="stylesheet">
+<title>博文列表</title>
+</head>
+<body>
+<div class="ibody">
+
+   
+  <article>
+    <h2 class="about_h">您现在的位置是：<a href="/">首页</a>><a href="1/">博文日志</a></h2>
+    <div class="bloglist">
+      <foreach name='list' item='v'>
+      <div class="newblog">
+        <ul>
+          <h3><a href="{:U(GROUP_NAME.'/List/show',array('id'=>$v['id']))}">{$v.title}</a></h3>
+          <div class="autor"><span>作者：杨东</span><span>分类：[<a href="/">{$v.catename}</a>]</span><span>浏览（<a href="/">{$v.click}</a>）</span></div>
+          <p>{$v.summary}<a href="{:U(GROUP_NAME.'/List/show',array('id'=>$v['id']))}" target="_blank" class="readmore">全文</a></p>
+        </ul>
+        <figure><img src="__PUBLIC__/images/{$v.image}" ></figure>
+        <div class="dateview">{$v.time|date='y-m-d H:i',###}</div>
+      </div>
+  </foreach>
+    
+       
+    </div>
+    <div class="page">{$page}</div>
+  </article>
+<include file="Layout:right"/>
+
+
