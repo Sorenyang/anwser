@@ -1,0 +1,974 @@
+[ 2014-08-21T13:24:01+08:00 ] 127.0.0.1 /04blog/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003132s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.121751s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.034210s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000609s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000541s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000541s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000402s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000398s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000438s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.007871s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001752s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512241 ) ORDER BY time desc  [ RunTime:0.000755s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.131900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132019s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002297s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001664s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002201s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002970s ]
+
+[ 2014-08-21T13:24:09+08:00 ] 127.0.0.1 /04blog/index.php/Index/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.018896s ]
+INFO: [ route_check ] --END-- [ RunTime:0.019020s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.003961s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.001262s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000470s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000456s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000476s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000483s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000431s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000424s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003855s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001456s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512249 ) ORDER BY time desc  [ RunTime:0.000464s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000430s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\www\04blog\Blog\Applications\Index\common\function.php 第 11 行.
+SQL: SELECT `pid` FROM `pp_cate` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.000468s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pp_blog` WHERE ( `cid` IN ('1') ) LIMIT 1   [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003817s ]
+SQL: SELECT Blog.id AS id,Blog.content AS content,Blog.time AS time,Blog.click AS click,Blog.cid AS cid,Blog.title AS title,Blog.summary AS summary,cate.name AS name FROM pp_blog Blog LEFT JOIN pp_cate cate ON Blog.cid=cate.id WHERE ( Blog.cid IN ('1') ) ORDER BY Blog.time DESC LIMIT 0,5   [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042431s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001095s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001045s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004919s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001483s ]
+
+[ 2014-08-21T13:24:12+08:00 ] 127.0.0.1 /04blog/index.php/Index/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001180s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001295s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.003515s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.001328s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000466s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000453s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000475s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000450s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000474s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000465s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003966s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001439s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512252 ) ORDER BY time desc  [ RunTime:0.000428s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000427s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\www\04blog\Blog\Applications\Index\common\function.php 第 11 行.
+SQL: SELECT `pid` FROM `pp_cate` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.000427s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pp_blog` WHERE ( `cid` IN ('2') ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003582s ]
+SQL: SELECT Blog.id AS id,Blog.content AS content,Blog.time AS time,Blog.click AS click,Blog.cid AS cid,Blog.title AS title,Blog.summary AS summary,cate.name AS name FROM pp_blog Blog LEFT JOIN pp_cate cate ON Blog.cid=cate.id WHERE ( Blog.cid IN ('2') ) ORDER BY Blog.time DESC LIMIT 0,5   [ RunTime:0.000728s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021171s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000573s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000501s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002248s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000792s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2014-08-21T13:24:13+08:00 ] 127.0.0.1 /04blog/index.php/Index/List/index/id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001510s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.004920s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.000476s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000323s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000322s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.006090s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.002615s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512253 ) ORDER BY time desc  [ RunTime:0.000392s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000355s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pp_blog` WHERE ( `cid` IN ('8','9','3') ) LIMIT 1   [ RunTime:0.032218s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.005826s ]
+SQL: SELECT Blog.id AS id,Blog.content AS content,Blog.time AS time,Blog.click AS click,Blog.cid AS cid,Blog.title AS title,Blog.summary AS summary,cate.name AS name FROM pp_blog Blog LEFT JOIN pp_cate cate ON Blog.cid=cate.id WHERE ( Blog.cid IN ('8','9','3') ) ORDER BY Blog.time DESC LIMIT 0,5   [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019812s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000566s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000499s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002244s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000793s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2014-08-21T13:24:15+08:00 ] 127.0.0.1 /04blog/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.003646s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.001323s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000517s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000501s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000512s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000474s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000466s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000530s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003830s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001437s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512255 ) ORDER BY time desc  [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021501s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000551s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000498s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002225s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000790s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2014-08-21T13:24:17+08:00 ] 127.0.0.1 /04blog/index.php/Index/List/index/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001229s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.003615s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.002383s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000435s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000455s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000471s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000505s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000448s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000472s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003693s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001565s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512257 ) ORDER BY time desc  [ RunTime:0.000511s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.051806s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pp_blog` WHERE ( `cid` IN ('17','18','6') ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003662s ]
+SQL: SELECT Blog.id AS id,Blog.content AS content,Blog.time AS time,Blog.click AS click,Blog.cid AS cid,Blog.title AS title,Blog.summary AS summary,cate.name AS name FROM pp_blog Blog LEFT JOIN pp_cate cate ON Blog.cid=cate.id WHERE ( Blog.cid IN ('17','18','6') ) ORDER BY Blog.time DESC LIMIT 0,5   [ RunTime:0.000674s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019453s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000534s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000748s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002599s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000813s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2014-08-21T13:24:19+08:00 ] 127.0.0.1 /04blog/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.004302s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.001350s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000432s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000311s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000378s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000399s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000351s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000465s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.009396s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.002886s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512259 ) ORDER BY time desc  [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024382s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000645s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000507s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002348s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000810s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2014-08-21T13:24:21+08:00 ] 127.0.0.1 /04blog/index.php/Index/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001131s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.004597s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.003909s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000494s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000356s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000418s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000563s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000435s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000487s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.006272s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.000702s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512261 ) ORDER BY time desc  [ RunTime:0.000741s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000520s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\www\04blog\Blog\Applications\Index\common\function.php 第 11 行.
+SQL: SELECT `pid` FROM `pp_cate` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.000381s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pp_blog` WHERE ( `cid` IN ('1') ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.004305s ]
+SQL: SELECT Blog.id AS id,Blog.content AS content,Blog.time AS time,Blog.click AS click,Blog.cid AS cid,Blog.title AS title,Blog.summary AS summary,cate.name AS name FROM pp_blog Blog LEFT JOIN pp_cate cate ON Blog.cid=cate.id WHERE ( Blog.cid IN ('1') ) ORDER BY Blog.time DESC LIMIT 0,5   [ RunTime:0.000774s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined index:  child F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 54 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+NOTIC: [8] Undefined variable: b F:\www\04blog\Blog\Runtime\Cache\Index\4b37db40c63422691ee1d1d859c3885b.php 第 70 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021265s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000571s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000505s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002246s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000798s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2014-08-21T13:24:22+08:00 ] 127.0.0.1 /04blog/index.php/Index/Show/index/id/70.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001172s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.004715s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.000783s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.001298s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000429s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000546s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000470s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000472s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000471s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003623s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001466s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512262 ) ORDER BY time desc  [ RunTime:0.000485s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029893s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000516s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000542s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002284s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000928s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2014-08-21T13:24:36+08:00 ] 127.0.0.1 /04blog/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.003547s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 0 )  [ RunTime:0.001355s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 1 )  [ RunTime:0.000432s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 2 )  [ RunTime:0.000346s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 3 )  [ RunTime:0.000483s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 4 )  [ RunTime:0.000526s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 5 )  [ RunTime:0.000379s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 6 )  [ RunTime:0.000351s ]
+SQL: SELECT * FROM `pp_cate` WHERE ( `pid` = 19 )  [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.003923s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `click` > 100 ) ORDER BY time desc  [ RunTime:0.001297s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `time` > 1408512276 ) ORDER BY time desc  [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022319s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000582s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000581s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002418s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000843s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2014-08-21T20:06:50+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004380s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003503s ]
+
+[ 2014-08-21T20:06:50+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/Index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002844s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033928s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003885s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003994s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003344s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004338s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004521s ]
+
+[ 2014-08-21T20:06:50+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003661s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002875s ]
+NOTIC: [8] ob_end_clean() [<a href='ref.outcontrol'>ref.outcontrol</a>]: failed to delete buffer. No buffer to delete. F:\www\04blog\Blog\Applications\Admin\action\LoginAction.class.php 第 18 行.
+NOTIC: [8] Undefined index:  admin F:\www\04blog\ThinkPHP\Common\functions.php 第 617 行.
+
+[ 2014-08-21T20:06:57+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/checkAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002785s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003010s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+SQL: SHOW COLUMNS FROM `pp_user` [ RunTime:0.101593s ]
+SQL: SELECT * FROM `pp_user`  [ RunTime:0.003035s ]
+
+[ 2014-08-21T20:06:57+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/checkpassword
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002566s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002795s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001960s ]
+SQL: SHOW COLUMNS FROM `pp_user` [ RunTime:0.007166s ]
+SQL: SELECT `password` FROM `pp_user` LIMIT 1   [ RunTime:0.002896s ]
+
+[ 2014-08-21T20:06:59+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/checkAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002564s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002803s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+SQL: SHOW COLUMNS FROM `pp_user` [ RunTime:0.011198s ]
+SQL: SELECT * FROM `pp_user`  [ RunTime:0.000728s ]
+
+[ 2014-08-21T20:06:59+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/checkcode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002539s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002755s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+
+[ 2014-08-21T20:06:59+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/checkpassword
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003913s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004214s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003245s ]
+SQL: SHOW COLUMNS FROM `pp_user` [ RunTime:0.009161s ]
+SQL: SELECT `password` FROM `pp_user` LIMIT 1   [ RunTime:0.004816s ]
+
+[ 2014-08-21T20:07:00+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Login/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002268s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002476s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+SQL: SHOW COLUMNS FROM `pp_user` [ RunTime:0.006941s ]
+SQL: SELECT * FROM `pp_user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.004309s ]
+SQL: UPDATE `pp_user` SET `logintime`=1408622820,`loginip`='127.0.0.1' WHERE ( `id` = 1 ) [ RunTime:0.001889s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056275s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003716s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014055s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003961s ]
+
+[ 2014-08-21T20:07:01+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002877s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003121s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003363s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057388s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003652s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003632s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004149s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016043s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\04blog\Blog\Applications\Admin\action\IndexAction.class.php:37) F:\www\04blog\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\04blog\Blog\Applications\Admin\action\IndexAction.class.php:37) F:\www\04blog\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\www\04blog\Blog\Applications\Admin\action\IndexAction.class.php:37) F:\www\04blog\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004365s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004548s ]
+
+[ 2014-08-21T20:07:02+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Index/copy
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003307s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003607s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002473s ]
+NOTIC: [8] Undefined index:  Admin F:\www\04blog\Blog\Applications\Admin\action\IndexAction.class.php 第 15 行.
+
+[ 2014-08-21T20:07:04+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Blog/blog
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002563s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.030711s ]
+SQL: SELECT * FROM `pp_cate` ORDER BY sort  [ RunTime:0.003038s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.062738s ]
+SQL: SELECT * FROM `pp_attr`  [ RunTime:0.003031s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042937s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003887s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003643s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015221s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004950s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005137s ]
+
+[ 2014-08-21T20:08:55+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Blog/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004610s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004866s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003477s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.008342s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `del` = 0 )  [ RunTime:0.003018s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.007744s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='15' [ RunTime:0.031230s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.007232s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.005289s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='16' [ RunTime:0.000833s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000846s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='17' [ RunTime:0.000745s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000623s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='18' [ RunTime:0.000730s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000626s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='19' [ RunTime:0.000735s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='20' [ RunTime:0.000733s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000631s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='21' [ RunTime:0.000735s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000648s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='22' [ RunTime:0.000736s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000629s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='23' [ RunTime:0.000735s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000589s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='24' [ RunTime:0.000804s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000629s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='25' [ RunTime:0.000738s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='26' [ RunTime:0.000735s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000630s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='27' [ RunTime:0.000740s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='28' [ RunTime:0.000790s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000639s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='29' [ RunTime:0.000736s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='30' [ RunTime:0.000735s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='31' [ RunTime:0.000736s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000585s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='32' [ RunTime:0.000809s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.000862s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='33' [ RunTime:0.000771s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000647s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='34' [ RunTime:0.000712s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000663s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='70' [ RunTime:0.000757s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000902s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='71' [ RunTime:0.000726s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000629s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='72' [ RunTime:0.000713s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000633s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='73' [ RunTime:0.000718s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000630s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='74' [ RunTime:0.000714s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000601s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='75' [ RunTime:0.000715s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.000663s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='76' [ RunTime:0.000718s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.061397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061623s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004086s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003615s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005660s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019896s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004758s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004983s ]
+
+[ 2014-08-21T20:08:59+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Blog/update/id/76
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002587s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002819s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003257s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.008835s ]
+SQL: SELECT * FROM `pp_cate` ORDER BY sort  [ RunTime:0.005044s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.007844s ]
+SQL: SELECT * FROM `pp_attr`  [ RunTime:0.004788s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.008261s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `id` = 76 ) LIMIT 1   [ RunTime:0.007067s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.011603s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='76' [ RunTime:0.005584s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.035947s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.002095s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056925s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003554s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003245s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002919s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013567s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003794s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003955s ]
+
+[ 2014-08-21T20:09:02+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Blog/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002835s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001916s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.009671s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `del` = 0 )  [ RunTime:0.004747s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.006999s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='15' [ RunTime:0.004399s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.009501s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.067925s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='16' [ RunTime:0.000650s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='17' [ RunTime:0.000825s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='18' [ RunTime:0.000682s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000575s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='19' [ RunTime:0.000686s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='20' [ RunTime:0.000687s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000543s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='21' [ RunTime:0.000683s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000579s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='22' [ RunTime:0.000680s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000575s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='23' [ RunTime:0.000683s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000576s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='24' [ RunTime:0.000776s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000544s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='25' [ RunTime:0.000694s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000583s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='26' [ RunTime:0.000683s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='27' [ RunTime:0.000688s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='28' [ RunTime:0.000753s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000766s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='29' [ RunTime:0.000720s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000608s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='30' [ RunTime:0.000689s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='31' [ RunTime:0.000754s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000754s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='32' [ RunTime:0.000851s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.000595s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='33' [ RunTime:0.000708s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000589s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='34' [ RunTime:0.000675s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='70' [ RunTime:0.000699s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000580s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='71' [ RunTime:0.000660s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='72' [ RunTime:0.000627s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='73' [ RunTime:0.000601s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000573s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='74' [ RunTime:0.000663s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000581s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='75' [ RunTime:0.000680s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='76' [ RunTime:0.000629s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043101s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003425s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003180s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002900s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013408s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003941s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004141s ]
+
+[ 2014-08-21T20:09:17+08:00 ] 127.0.0.1 /04blog/index.php/Admin/Blog/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002862s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003091s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `pp_blog` [ RunTime:0.007809s ]
+SQL: SELECT * FROM `pp_blog` WHERE ( `del` = 0 )  [ RunTime:0.003139s ]
+SQL: SHOW COLUMNS FROM `pp_attr` [ RunTime:0.010064s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='15' [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `pp_cate` [ RunTime:0.006882s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.003015s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='16' [ RunTime:0.000724s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000662s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='17' [ RunTime:0.000706s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000528s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='18' [ RunTime:0.000642s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000626s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='19' [ RunTime:0.000761s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='20' [ RunTime:0.000731s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='21' [ RunTime:0.000736s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='22' [ RunTime:0.000732s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='23' [ RunTime:0.000916s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='24' [ RunTime:0.000733s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='25' [ RunTime:0.000734s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='26' [ RunTime:0.000740s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000627s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='27' [ RunTime:0.000834s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000722s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='28' [ RunTime:0.000833s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000761s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='29' [ RunTime:0.000783s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000632s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='30' [ RunTime:0.000747s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000638s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='31' [ RunTime:0.000741s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='32' [ RunTime:0.050933s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.000732s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='33' [ RunTime:0.000761s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000631s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='34' [ RunTime:0.000907s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.000631s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='70' [ RunTime:0.000751s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.000595s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='71' [ RunTime:0.000716s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000626s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='72' [ RunTime:0.000721s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='73' [ RunTime:0.000725s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='20' ) LIMIT 1   [ RunTime:0.000626s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='74' [ RunTime:0.000710s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='19' ) LIMIT 1   [ RunTime:0.000589s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='75' [ RunTime:0.000711s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index:  mapping_order F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 188 行.
+NOTIC: [8] Undefined index:  mapping_limit F:\www\04blog\ThinkPHP\Extend\Model\RelationModel.class.php 第 189 行.
+SQL: SELECT b.* FROM pp_blog_attr AS a, pp_attr AS b WHERE a.aid = b.id AND a. bid='76' [ RunTime:0.000717s ]
+SQL: SELECT `name` FROM `pp_cate` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.000896s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042789s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003777s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003870s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003298s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015344s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004927s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005194s ]
+
